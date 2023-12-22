@@ -4,8 +4,8 @@ import java.util.Objects;
 
 //----------------------------------------------
 // Assignment (One)
-// © Your Name
-// Written by: (include your name and student id)
+//
+// Written by: Shadan Farahbakhsh and Behnaz Khalili
 //------------------------------------------------
 
     public class Computer {
@@ -14,7 +14,7 @@ import java.util.Objects;
         private String brand;
         private String model;
         private long serialNumber;
-        private long serialNumberCounter = 1000000;
+        private  static long serialNumberCounter = 1000000;
         private double price;
         private int numberOfCreatedComputer = 0;
 
@@ -29,6 +29,10 @@ import java.util.Objects;
 
         public long getSerialNumber() {
             return serialNumber;
+        }
+
+        public void setSerialNumber(long serialNumber) {
+            this.serialNumber = serialNumber;
         }
 
         public double getPrice() {
@@ -48,7 +52,6 @@ import java.util.Objects;
         public void setPrice(double price) {
             this.price = price;
         }
-
 
 
         //Constructors for the class
